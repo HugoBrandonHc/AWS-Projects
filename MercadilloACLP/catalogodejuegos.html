@@ -1,0 +1,268 @@
+<html><head><base href="https://mercadilloaclp.com/catalogo">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo - MercadilloACLP</title>
+<style>
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #e67e22;
+  --background-color: #ecf0f1;
+  --text-color: #34495e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
+}
+
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.filters label {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.filters select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.game-card {
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+}
+
+.game-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.game-card-content {
+  padding: 1rem;
+}
+
+.game-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.game-card p {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.game-card a {
+  display: block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.game-card a:hover {
+  background-color: #2980b9;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .filters label {
+    margin-bottom: 0.5rem;
+  }
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/catalogo">Catálogo</a></li>
+          <li><a href="/subir-juego">Subir Juego</a></li>
+          <li><a href="/login">Iniciar Sesión</a></li>
+          <li><a href="/registro">Registro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Catálogo de Juegos</h1>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="filters">
+        <label for="filter-category">Categoría:</label>
+        <select id="filter-category">
+          <option value="">Todas</option>
+          <option value="estrategia">Estrategia</option>
+          <option value="cooperativo">Cooperativo</option>
+          <option value="familiar">Familiar</option>
+          <option value="euros">Eurogames</option>
+        </select>
+        <label for="filter-type">Tipo:</label>
+        <select id="filter-type">
+          <option value="">Todos</option>
+          <option value="venta">Venta</option>
+          <option value="intercambio">Intercambio</option>
+        </select>
+      </div>
+
+      <div class="game-grid">
+        <div class="game-card">
+          <img src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Catan - Juego de mesa estratégico">
+          <div class="game-card-content">
+            <h3>Catan</h3>
+            <p>Intercambio - Usado (8/10)</p>
+            <a href="/juegos/catan">Ver Detalles</a>
+          </div>
+        </div>
+        <div class="game-card">
+          <img src="https://images.unsplash.com/photo-1638452933982-c338b00f7920?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Ticket to Ride - Juego de mesa de trenes">
+          <div class="game-card-content">
+            <h3>Ticket to Ride</h3>
+            <p>Venta - Nuevo</p>
+            <a href="/juegos/ticket-to-ride">Ver Detalles</a>
+          </div>
+        </div>
+        <div class="game-card">
+          <img src="https://images.unsplash.com/photo-1606503153255-59d8b8b82176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Pandemic - Juego de mesa cooperativo">
+          <div class="game-card-content">
+            <h3>Pandemic</h3>
+            <p>Intercambio - Usado (9/10)</p>
+            <a href="/juegos/pandemic">Ver Detalles</a>
+          </div>
+        </div>
+        <div class="game-card">
+          <img src="https://images.unsplash.com/photo-1611996575749-79a3a250f948?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Monopoly - Juego de mesa clásico">
+          <div class="game-card-content">
+            <h3>Monopoly</h3>
+            <p>Venta - Usado (7/10)</p>
+            <a href="/juegos/monopoly">Ver Detalles</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 MercadilloACLP. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body></html>

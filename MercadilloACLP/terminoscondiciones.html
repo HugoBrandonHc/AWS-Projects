@@ -1,0 +1,185 @@
+<html><head><base href="https://mercadilloaclp.com/terminos-condiciones">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Términos y Condiciones - MercadilloACLP</title>
+<style>
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #e67e22;
+  --background-color: #ecf0f1;
+  --text-color: #34495e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
+}
+
+main {
+  padding: 2rem 0;
+}
+
+h1, h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.terms-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 0.5rem;
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="https://mercadilloaclp.com/">Inicio</a></li>
+          <li><a href="https://mercadilloaclp.com/catalogo">Catálogo</a></li>
+          <li><a href="https://mercadilloaclp.com/intercambio">Intercambio</a></li>
+          <li><a href="https://mercadilloaclp.com/login">Iniciar Sesión</a></li>
+          <li><a href="https://mercadilloaclp.com/registro">Registro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="terms-content">
+      <h1>Términos y Condiciones de MercadilloACLP</h1>
+      
+      <h2>1. Aceptación de los Términos</h2>
+      <p>Al acceder y utilizar MercadilloACLP, usted acepta cumplir y estar sujeto a estos Términos y Condiciones. Si no está de acuerdo con alguno de los términos, no utilice nuestro sitio.</p>
+      
+      <h2>2. Registro de Usuarios</h2>
+      <p>Para utilizar ciertas funciones de MercadilloACLP, es necesario registrarse. Usted es responsable de mantener la confidencialidad de su cuenta y contraseña. Debe tener al menos 18 años para registrarse.</p>
+      
+      <h2>3. Uso del Servicio</h2>
+      <p>MercadilloACLP es una plataforma para el intercambio y venta de juegos de mesa entre usuarios. No nos hacemos responsables de las transacciones entre usuarios. Use el sentido común y precaución al realizar intercambios o compras.</p>
+      
+      <h2>4. Contenido del Usuario</h2>
+      <p>Al publicar contenido en MercadilloACLP, usted garantiza que tiene los derechos necesarios para hacerlo y que no infringe los derechos de terceros. Nos reservamos el derecho de eliminar cualquier contenido que consideremos inapropiado.</p>
+      
+      <h2>5. Propiedad Intelectual</h2>
+      <p>Todo el contenido original de MercadilloACLP está protegido por derechos de autor. No puede usar, copiar o distribuir nuestro contenido sin permiso expreso.</p>
+      
+      <h2>6. Limitación de Responsabilidad</h2>
+      <p>MercadilloACLP no se hace responsable de ningún daño directo, indirecto, incidental o consecuente que resulte del uso o la imposibilidad de usar nuestros servicios.</p>
+      
+      <h2>7. Modificaciones de los Términos</h2>
+      <p>Nos reservamos el derecho de modificar estos Términos y Condiciones en cualquier momento. Los cambios entrarán en vigor inmediatamente después de su publicación en el sitio.</p>
+      
+      <h2>8. Ley Aplicable</h2>
+      <p>Estos Términos y Condiciones se regirán e interpretarán de acuerdo con las leyes del país donde MercadilloACLP tiene su sede principal, sin tener en cuenta sus disposiciones sobre conflictos de leyes.</p>
+      
+      <h2>9. Contacto</h2>
+      <p>Si tiene alguna pregunta sobre estos Términos y Condiciones, por favor contáctenos a través de <a href="mailto:info@mercadilloaclp.com">info@mercadilloaclp.com</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 MercadilloACLP. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Highlight current section in navigation
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('h2');
+      const navItems = document.querySelectorAll('nav ul li a');
+
+      let current = '';
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 60) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('href').includes(current)) {
+          item.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body></html>
