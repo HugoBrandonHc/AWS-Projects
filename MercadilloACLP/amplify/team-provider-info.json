@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mercadilloaclp-dev-0bc8f-authRole",
+      "UnauthRoleArn": "arn:aws:iam::043309347694:role/amplify-mercadilloaclp-dev-0bc8f-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::043309347694:role/amplify-mercadilloaclp-dev-0bc8f-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-mercadilloaclp-dev-0bc8f-deployment",
+      "UnauthRoleName": "amplify-mercadilloaclp-dev-0bc8f-unauthRole",
+      "StackName": "amplify-mercadilloaclp-dev-0bc8f",
+      "StackId": "arn:aws:cloudformation:us-east-2:043309347694:stack/amplify-mercadilloaclp-dev-0bc8f/0774c410-8b42-11ef-8fbf-065977019a5d",
+      "AmplifyAppId": "d3hun88ic5coyd"
+    },
+    "categories": {
+      "auth": {
+        "mercadilloaclp08f61a86": {}
+      }
+    }
+  }
+}
