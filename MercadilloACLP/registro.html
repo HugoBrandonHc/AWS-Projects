@@ -1,4 +1,4 @@
-<html><head><base href="https://main.dykful97zsfhl.amplifyapp.com/registro.html">
+<html><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Registro - MercadilloACLP</title>
@@ -221,12 +221,11 @@ footer {
     <div class="container">
       <nav>
         <ul>
-          <li><a href="https://mercadilloaclp.com/">Inicio</a></li>
-          <li><a href="https://mercadilloaclp.com/catalogo">Catálogo</a></li>
-          <li><a href="https://mercadilloaclp.com/intercambio">Intercambio</a></li>
-          <li><a href="https://mercadilloaclp.com/login">Iniciar Sesión</a></li>
-          <li><a href="https://mercadilloaclp.com/registro">Registro</a></li>
-        </ul>
+          <li><a href="index">Inicio</a></li>
+          <li><a href="catalogo">Catálogo</a></li>
+          <li><a href="subir-juego">Subir Juego</a></li>
+          <li><a href="login">Iniciar Sesión</a></li>
+          <li><a href="registro">Registro</a></li>
       </nav>
     </div>
   </header>
@@ -237,7 +236,7 @@ footer {
       <form id="registerForm">
         <div class="image-upload">
           <div class="image-preview" id="imagePreview">
-            <img src="https://mercadilloaclp.com/default-avatar.png" alt="Avatar por defecto" id="previewImage">
+            <img src="https://main.dykful97zsfhl.amplifyapp.com/default-avatar.png" alt="Avatar por defecto" id="previewImage">
           </div>
           <input type="file" id="avatarUpload" name="avatar" accept="image/*">
           <label for="avatarUpload">Subir Imagen de Perfil</label>
@@ -298,16 +297,16 @@ footer {
         </div>
         <div class="checkbox-group">
           <input type="checkbox" id="termsConditions" name="termsConditions" required>
-          <label for="termsConditions">Acepto los <a href="https://mercadilloaclp.com/terminos-condiciones" target="_blank">Términos y Condiciones</a></label>
+          <label for="termsConditions">Acepto los <a href="https://main.dykful97zsfhl.amplifyapp.com/terminos-condiciones" target="_blank">Términos y Condiciones</a></label>
         </div>
         <div class="checkbox-group">
           <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
-          <label for="privacyPolicy">Acepto la <a href="https://mercadilloaclp.com/politica-privacidad" target="_blank">Política de Privacidad</a></label>
+          <label for="privacyPolicy">Acepto la <a href="https://main.dykful97zsfhl.amplifyapp.com/politica-privacidad" target="_blank">Política de Privacidad</a></label>
         </div>
         <button type="submit" class="btn">Registrarse</button>
       </form>
       <div class="login-link">
-        ¿Ya tienes una cuenta? <a href="https://mercadilloaclp.com/login">Inicia sesión aquí</a>
+        ¿Ya tienes una cuenta? <a href="https://main.dykful97zsfhl.amplifyapp.com/login">Inicia sesión aquí</a>
       </div>
     </div>
   </main>
@@ -339,7 +338,7 @@ footer {
         // Simulación de registro exitoso
         setTimeout(() => {
           alert('Registro exitoso. ¡Bienvenido a MercadilloACLP!');
-          window.location.href = 'https://mercadilloaclp.com/juego/catan'; // Redirigir al usuario a la página de Catan después del registro
+          window.location.href = 'https://main.dykful97zsfhl.amplifyapp.com'; // Redirigir al usuario a la página principal
         }, 1000);
       }
     });
