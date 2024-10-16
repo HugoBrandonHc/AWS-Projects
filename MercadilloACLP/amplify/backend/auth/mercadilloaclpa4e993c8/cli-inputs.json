@@ -1,10 +1,8 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "mercadilloaclp08f61a86_identitypool_08f61a86",
-    "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "mercad08f61a86",
-    "userPoolName": "mercadilloaclp08f61a86_userpool_08f61a86",
+    "resourceNameTruncated": "mercada4e993c8",
+    "userPoolName": "mercadilloaclpa4e993c8_userpool_a4e993c8",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -31,18 +29,41 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "mercad08f61a86_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "mercada4e993c8_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "08f61a86",
-    "resourceName": "mercadilloaclp08f61a86",
-    "authSelections": "identityPoolAndUserPool",
-    "useDefault": "default",
+    "sharedId": "a4e993c8",
+    "resourceName": "mercadilloaclpa4e993c8",
+    "authSelections": "userPoolOnly",
+    "useDefault": "manual",
     "usernameAttributes": [
       "email"
     ],
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
-    "useEnabledMfas": true
+    "useEnabledMfas": true,
+    "authRoleArn": {
+      "Fn::GetAtt": [
+        "AuthRole",
+        "Arn"
+      ]
+    },
+    "unauthRoleArn": {
+      "Fn::GetAtt": [
+        "UnauthRole",
+        "Arn"
+      ]
+    },
+    "breakCircularDependency": true,
+    "dependsOn": [],
+    "userPoolGroups": false,
+    "adminQueries": false,
+    "triggers": {},
+    "hostedUI": false,
+    "authProviders": [],
+    "parentStack": {
+      "Ref": "AWS::StackId"
+    },
+    "permissions": []
   }
 }

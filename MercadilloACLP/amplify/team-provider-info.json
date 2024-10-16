@@ -13,7 +13,25 @@
     },
     "categories": {
       "auth": {
-        "mercadilloaclp08f61a86": {}
+        "mercadilloaclpa4e993c8": {}
+      }
+    }
+  },
+  "env": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mercadilloaclp-env-9cd25-authRole",
+      "UnauthRoleArn": "arn:aws:iam::043309347694:role/amplify-mercadilloaclp-env-9cd25-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::043309347694:role/amplify-mercadilloaclp-env-9cd25-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-mercadilloaclp-env-9cd25-deployment",
+      "UnauthRoleName": "amplify-mercadilloaclp-env-9cd25-unauthRole",
+      "StackName": "amplify-mercadilloaclp-env-9cd25",
+      "StackId": "arn:aws:cloudformation:us-east-2:043309347694:stack/amplify-mercadilloaclp-env-9cd25/1b3f28a0-8b60-11ef-8292-025f8b152883",
+      "AmplifyAppId": "d3hun88ic5coyd"
+    },
+    "categories": {
+      "auth": {
+        "mercadilloaclpa4e993c8": {}
       }
     }
   }

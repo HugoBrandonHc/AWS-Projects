@@ -210,8 +210,8 @@
       Amplify.configure({
         Auth: {
           region: 'us-east-2', // Región de tu grupo de usuarios de Cognito
-          userPoolId: 'us-east-2_xxxxxxx', // ID del grupo de usuarios
-          userPoolWebClientId: 'xxxxxxxxxxxx', // ID del cliente de aplicación
+          userPoolId: 'us-east-2_cYJwHzQa5', // ID del grupo de usuarios
+          userPoolWebClientId: '25hgsbs4gjnfekua2tshejp950', // ID del cliente de aplicación
         }
       });
   
@@ -221,7 +221,8 @@
         const username = document.getElementById('username').value;
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
-        const phone = document.getElementById('phone').value;
+        // teléfono
+        const phone = '+51' + document.getElementById('phone').value; // Ejemplo para Perú
   
         try {
           // Registrar al usuario en Cognito
